@@ -1,0 +1,24 @@
+{
+  "name": "learning-backend",
+  "version": "1.0.0",
+  "description": "Backend for learning microsite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/futurice/learning-backend.git"
+  },
+  "author": "Julius Ikkala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/futurice/learning-backend/issues"
+  },
+  "homepage": "https://github.com/futurice/learning-backend#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "passport": "^0.4.0",
+    "passport-google-oauth2": "^0.1.6"
+  }
+}
