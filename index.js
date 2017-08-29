@@ -49,7 +49,6 @@ app.get('/logout', function(req, res) {
 app.get('/login/return',
   passport.authenticate('google', { prompt: 'select_account', failureRedirect: '/' }),
   function(req, res) {
-    console.log('redirect');
     res.redirect('/');
   });
 
