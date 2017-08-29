@@ -1,6 +1,6 @@
 # Learning microsite backend
 
-Performs simple authentication based on Google account domain.
+Performs simple authentication based on the user's Google account domain.
 
 ## Configuration
 
@@ -31,3 +31,7 @@ GOOGLE_CLIENT_ID=yourclientid
 GOOGLE_CLIENT_SECRET=yourclientsecret
 SESSION_SECRET=randomgarbleyoujustcameupwith
 ```
+
+## Usage
+
+Do the configuration and run `npm start`.
