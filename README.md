@@ -5,21 +5,29 @@ Performs simple authentication based on Google account domain.
 ## Configuration
 
 In `config.js`:
-```
+```javascript
 module.exports = {
     paths: [
         {
             domain: "goodguys.com",
-            path: "example.com/nicesite",
+            path: "private",
         },
         {
             domain: "badguys.com",
-            path: "example.com/notsonicesite",
+            url: "http://lmgtfy.com/?q=how+to+be+good",
         },
         {
             domain: /.*/,
-            path: "example.com/genericsite",
+            path: "public",
         },
     ],
 }
+```
+
+In `.env`:
+```
+PORT=8080
+GOOGLE_CLIENT_ID=yourclientid
+GOOGLE_CLIENT_SECRET=yourclientsecret
+SESSION_SECRET=randomgarbleyoujustcameupwith
 ```
