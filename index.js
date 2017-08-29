@@ -52,11 +52,18 @@ app.get('/login/return',
     res.redirect('/');
   });
 
-app.get('/*', function(req, res) {
+app.get('*', function(req, res) {
   const redirPath = findPath(req.user || '');
 
   if(redirPath.url) req.pipe(request(redirPath.url + req.url)).pipe(res);
-  else res.sendFile(path.join(__dirname, redirPath.path, req.url));
+  else {
+    const root = path.resolve(__dirname, redirPath.path);
+    res.sendFile(req.url, { root }, function(err) {
+        if(err) {
+          res.sendFile('index.html', { root });
+        }
+      });
+  }
 });
 
 app.listen(process.env.PORT, function() {
