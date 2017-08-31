@@ -6,7 +6,7 @@ const request = require('request')
 const config = require('./config')
 const path = require('path')
 
-const callbackUrl = (process.env.URL || 'http://localhost') + ':' + process.env.PORT + '/login/return';
+const callbackUrl = (process.env.URL || 'http://localhost:'+process.env.PORT) + '/login/return';
 
 passport.use(new Strategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
