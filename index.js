@@ -6,10 +6,12 @@ const request = require('request')
 const config = require('./config')
 const path = require('path')
 
+const callbackUrl = (process.env.URL || 'http://localhost') + ':' + process.env.PORT + '/login/return';
+
 passport.use(new Strategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: 'http://localhost:8080/login/return',
+    callbackURL: callbackUrl,
   },
   function(accessToken, refreshToken, profile, cb) {
     return cb(null, profile._json.domain);
