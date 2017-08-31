@@ -1,7 +1,7 @@
 {
-  "name": "learning-backend",
+  "name": "macsis",
   "version": "1.0.0",
-  "description": "Backend for learning microsite",
+  "description": "Simple access control based on Google account domain",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/futurice/learning-backend.git"
+    "url": "git+https://github.com/futurice/macsis.git"
   },
   "author": "Julius Ikkala",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/futurice/learning-backend/issues"
+    "url": "https://github.com/futurice/macsis/issues"
   },
-  "homepage": "https://github.com/futurice/learning-backend#readme",
+  "homepage": "https://github.com/futurice/macsis#readme",
   "dependencies": {
     "dotenv": "^4.0.0",
     "express": "^4.15.4",

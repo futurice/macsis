@@ -1,6 +1,8 @@
-# Learning microsite backend
+# Macsis
 
-Performs simple authentication based on the user's Google account domain.
+Performs simple access control based on the user's Google account domain.
+You can use both local paths and urls. Once the user has logged in via /login,
+they served the path or url specified in `config.js`.
 
 ## Configuration
 
