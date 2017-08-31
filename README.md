@@ -1,4 +1,5 @@
 # Macsis
+![Macsis logo](https://user-images.githubusercontent.com/1752365/29924942-5fbd3a74-8e67-11e7-9459-349854707141.png?raw=true)
 
 Performs simple access control based on the user's Google account domain.
 You can use both local paths and urls. Once the user has logged in via /login,
